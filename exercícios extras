@@ -1,0 +1,134 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyPgZEAfduYOQalLPA3nIBrr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/brenoalexandre12/Mecanica1/blob/main/exerc%C3%ADcios%20extras\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multiplo de 3\n",
+        "numero = int(input(\"Digite um numero inteiro: \"))\n",
+        "if numero % 3 == 0:\n",
+        "    print(f\"O numero {numero} é multiplo de 3\")\n",
+        "else:\n",
+        "    print(f\"O numero {numero} não é multiplo de 3\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Jik_h7ESHod1",
+        "outputId": "6037cabe-ccce-47d2-e312-43439cbcd9dc"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um numero inteiro: 15\n",
+            "O numero 15 é multiplo de 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#média ponderada\n",
+        "nota1 = float(input(\"Digite a primeira nota: \"))\n",
+        "nota2 = float(input(\"Digite a segunda nota: \"))\n",
+        "peso1 = float(input(\"Digite o peso da primeira nota: \"))\n",
+        "peso2 = float(input(\"Digite o peso da segunda nota: \"))\n",
+        "media = (nota1 * peso1 + nota2 * peso2) / (peso1 + peso2)\n",
+        "if media >= 5:\n",
+        "  print(f\"A média ponderada é {media:.2f}. Aprovado!\")\n",
+        "\n",
+        "else:\n",
+        "  print(f\"A média ponderada é {media:.2f}. Reprovado!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XU_U17pSIn4c",
+        "outputId": "09d9ff8d-be09-445d-cd5f-b2176e49c878"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira nota: 8\n",
+            "Digite a segunda nota: 7\n",
+            "Digite o peso da primeira nota: 2\n",
+            "Digite o peso da segunda nota: 3\n",
+            "A média ponderada é 7.40. Aprovado!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#menor valor\n",
+        "valor_a = float(input(\"Digite o valor a: \"))\n",
+        "valor_b = float(input(\"Digite o valor b: \"))\n",
+        "valor_c = float(input(\"Digite o valor c: \"))\n",
+        "if valor_a <= valor_b and valor_a <= valor_c:\n",
+        " print(f\"O valor a é o menor: {valor_a}\")\n",
+        "else:\n",
+        "  if valor_b <= valor_a and valor_b <= valor_c:\n",
+        "   print(f\"O valor b é o menor: {valor_b}\")\n",
+        "  else:\n",
+        "    print(f\"O valor c é o menor: {valor_c}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sFDDJ2LFMlLP",
+        "outputId": "195c26c2-e52d-4919-c41d-003c3463f360"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor a: 2555555555\n",
+            "Digite o valor b: 2555555555\n",
+            "Digite o valor c: 2555555555\n",
+            "O valor a é o menor: 2555555555.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
