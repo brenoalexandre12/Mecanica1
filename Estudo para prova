@@ -1,0 +1,160 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN4yt9HkzIG3NeAQe74L1gP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/brenoalexandre12/Mecanica1/blob/main/Estudo%20para%20prova\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 20,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iwoUQErXK8Ir",
+        "outputId": "31c85cd6-f31c-4530-e923-41ef4d24b4ed"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Deseja realizar a soma de 2 variaveis? (S/N): s\n",
+            "Digite o primeiro valor: 3.4589\n",
+            "Digite o segundo valor: 4.81152\n",
+            "A soma de 3.4589 e 4.81152 é: 8.27\n",
+            "\n",
+            "Deseja realizar a soma de 2 variaveis? (S/N): n\n",
+            "operação finalizada.\n"
+          ]
+        }
+      ],
+      "source": [
+        "while True:\n",
+        "\n",
+        " resposta = input(\"Deseja realizar a soma de 2 variaveis? (S/N): \").strip().upper()\n",
+        "\n",
+        " if resposta == \"S\":\n",
+        "     var1 = float(input(\"Digite o primeiro valor: \"))\n",
+        "     var2 = float(input(\"Digite o segundo valor: \"))\n",
+        "\n",
+        "     soma = var1 + var2\n",
+        "\n",
+        "     print(f\"A soma de {var1} e {var2} é: {soma:.2f}\\n\")\n",
+        "\n",
+        " elif resposta == 'N':\n",
+        "     print(\"operação finalizada.\")\n",
+        "     break\n",
+        "\n",
+        " else:\n",
+        "     print(\"Resposta inválida, por favor, digite 'S' para Sim ou 'N' para Não.\\n\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True: # loop infinito\n",
+        "\n",
+        "    resposta = input(\"Deseja realizar a soma de 2 variaveis? (S/N): \").strip().upper() # pergunta ao usuario se ele deseja realizar a soma\n",
+        "\n",
+        "    if resposta == \"S\": # verifica se a resposta é sim\n",
+        "        var1 = float(input(\"Digite o primeiro valor: \")) # solicita o primeiro valor\n",
+        "        var2 = float(input(\"Digite o segundo valor: \")) # solicita o segundo valor\n",
+        "\n",
+        "        soma = var1 + var2 # realiza a soma\n",
+        "\n",
+        "        print(f\"A soma dos valores é: {soma:.2f}\\n\") # exibe a soma\n",
+        "\n",
+        "    elif resposta == 'N': # verifica se a resposta é não\n",
+        "        print(\"operação finalizada.\") # informa que a operação foi finalizada\n",
+        "        break # sai do loop\n",
+        "\n",
+        "    else: # caso a resposta seja diferente de sim ou não\n",
+        "        print(\"Resposta inválida, por favor, digite 'S' para Sim ou 'N' para Não.\\n\") # solicita ao usuario que digite novamente"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "61SrN8y0Rf5O",
+        "outputId": "b5b3cf6f-d2f8-4ea7-b768-46051d9de890"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Deseja realizar a soma de 2 variaveis? (S/N): s\n",
+            "Digite o primeiro valor: 3\n",
+            "Digite o segundo valor: 5\n",
+            "A soma dos valores é: 8.00\n",
+            "\n",
+            "Deseja realizar a soma de 2 variaveis? (S/N): n\n",
+            "operação finalizada.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    resposta = input(\"Deseja realizar a soma de 2 variaveis? (sim/não): \").lower()\n",
+        "\n",
+        "    if resposta == \"sim\":\n",
+        "        var1 = float(input(\"Digite o primeiro valor: \"))\n",
+        "        var2 = float(input(\"Digite o segundo valor: \"))\n",
+        "        soma = var1 + var2\n",
+        "        print(f\"A soma é:\" , soma)\n",
+        "    else:\n",
+        "        print(\"Encerrando o programa.\")\n",
+        "        break\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7CE4Jr-fT6jW",
+        "outputId": "ec5173b0-ce2d-47ab-bc26-97862c6217ae"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Deseja realizar a soma de 2 variaveis? (sim/não): sim\n",
+            "Digite o primeiro valor: 2\n",
+            "Digite o segundo valor: 5\n",
+            "A soma é: 7.0\n",
+            "Deseja realizar a soma de 2 variaveis? (sim/não): não\n",
+            "Encerrando o programa.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
